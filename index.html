@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  
+  <form class="review">
     <h2 class="review__header">Help us help you.</h2>
-    <span>How are we doing?</span>
-    <div class="starForm" id="starForm">
-
+    <span class="review__question">How are we doing?</span>
+    <div class="review__starWrapper" id="stars">
       <input type="radio" name="rating" id="rating-star-5" class="star star-5 hidden" value="5">
       <label for="rating-star-5" class="star star-5">
         <i class="fas fa-star"></i>
@@ -42,10 +42,9 @@
         <i class="fas fa-star"></i>
       </label>
     </div>
-    <a href="review.html" class="continueButton">Continue</a>
+    <button id="starContinueButton" class="review__starContinueButton" disabled="disabled">Continue</button>
 
-
-    <!-- <div class="reviewForm" id="reviewForm">
+    <div class="review__questions hidden" id="reviewQuestions">
       <div class="reviewForm__row">
 
         <div class="reviewForm__inputWrapper">
@@ -71,12 +70,9 @@
       </div>
 
       <button class="reviewForm__button">Continue</button>
+    </div>
+  </form>
 
-    </div> -->
-    
-
-  </div>
-  
   <script src="script.js"></script>
 </body>
 </html>
