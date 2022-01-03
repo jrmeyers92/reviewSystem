@@ -15,15 +15,99 @@ body {
 }
 
 .container {
-  border: 1px solid gray;
-  padding: 1rem;
-  width: 60%;
+  padding: 1rem 3rem;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
 }
 
-i {
-  font-size: 3rem;
+.review__header {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.starForm {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  transition: all .4s;
+}
+
+.star {
+  font-size: 2rem;
+  color: rgb(201, 201, 201);
+  cursor: pointer;
+}
+
+input.star:checked + label {
   color: #fc0;
+}
+
+input.star:checked ~ label {
+  color: #fc0;
+}
+
+.continueButton {
+  padding: .5rem;
+  background-color: rgb(211, 170, 95);
+  border: none;
+  transition: all .2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.continueButton:hover,
+.continueButton:active {
+  background-color: #ad8c4e;
+  
+}
+
+.reviewForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  transition: all .2s;
+}
+
+.reviewForm__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.reviewForm__inputWrapper {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .7rem;
+}
+
+.reviewForm__inputWrapper-full {
+  width: 100%;
+}
+
+.reviewForm__inputWrapper input,
+.reviewForm__inputWrapper textarea {
+  padding: .4rem;
+  margin-top: .3rem;
+}
+
+.reviewForm__button {
+  display: inline;
+  padding: .5rem;
+  background-color: rgb(211, 170, 95);
+  border: none;
+  cursor: pointer; 
+  font-size: 1.2rem; 
+  width: 40%;
+
 }
