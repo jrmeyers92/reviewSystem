@@ -63,23 +63,19 @@ input.star:checked ~ label {
   margin-right: auto;
 }
 
-.review__starContinueButton:enabled {
-  background-color: #d3aa5f;
-  margin-top: .5rem;
-  border: none;
-  padding: .5rem;
-  cursor: pointer;
-  color: white;
+.review__response {
+  margin: 1rem 0;
+  color: red;
+  overflow-wrap: break-word;
+  
+}
+
+.review__step {
+  font-size: 1.4rem;
   font-weight: bold;
-  font-size: 1.25rem;
+  margin: 1rem 0;
+  align-self: flex-start;
 }
-
-.review__starContinueButton:enabled:hover,
-.review__starContinueButton:enabled:active {
-  background-color: rgb(173,140,78);
-}
-
-
 
 .review__questions {
   display: flex;
@@ -113,13 +109,36 @@ input.star:checked ~ label {
   margin-top: .3rem;
 }
 
-.reviewForm__button {
-  display: inline;
+
+.next, 
+.prev {
   padding: .5rem;
   background-color: rgb(211, 170, 95);
   border: none;
   cursor: pointer; 
   font-size: 1.2rem; 
   width: 40%;
+  margin: .3rem 0;
 
+}
+
+.slider {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.slideWrapper {
+  display: flex;
+  transition: all .3s;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+}
+
+.navButtons {
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
 }

@@ -42,34 +42,64 @@
         <i class="fas fa-star"></i>
       </label>
     </div>
-    <button id="starContinueButton" class="review__starContinueButton" disabled="disabled">Continue</button>
+    <span class="review__response" id="reviewResponse"></span>
 
-    <div class="review__questions hidden" id="reviewQuestions">
-      <div class="reviewForm__row">
 
-        <div class="reviewForm__inputWrapper">
-          <label for="reviewName">Name</label>
-          <input type="text" name="review" id="reviewName">
+
+
+
+
+    
+    <div class="slider hidden" id="slider">
+      <div class="slideWrapper" id="slideWrapper">
+        <div class="review__questions slide slide-1" id="reviewQuestions">
+          <span class="review__step">Step 1 of 5</span>
+          <div class="reviewForm__row">
+
+            <div class="reviewForm__inputWrapper">
+              <label for="reviewName">Name</label>
+              <input type="text" name="review" id="reviewName">
+            </div>
+
+            <div class="reviewForm__inputWrapper">
+              <label for="reviewEmail">Email</label>
+              <input type="email" name="review" id="reviewEmail">
+            </div>
+
+          </div>
+
+          <div class="reviewForm__inputWrapper reviewForm__inputWrapper-full">
+            <label for="reviewTitle">Title of Review</label>
+            <input type="text" name="review" id="reviewTitle">
+          </div>
+
+          <div class="reviewForm__inputWrapper reviewForm__inputWrapper-full">
+            <label for="reviewEmail">How was your overall experience?</label>
+            <textarea type="email" name="review" id="reviewEmail" rows='5'></textarea>
+          </div>
         </div>
-
-        <div class="reviewForm__inputWrapper">
-          <label for="reviewEmail">Email</label>
-          <input type="email" name="review" id="reviewEmail">
+        <div class="slide slide-2">
+          <span class="review__step">Step 2 of 5</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, harum beatae, sint vitae pariatur quod soluta eaque nesciunt eius modi eos quas sunt, sapiente neque esse praesentium adipisci. Ipsa aspernatur nihil autem eligendi maxime molestias consequatur fugit dolor, nulla inventore libero laudantium! Praesentium sapiente fuga in doloribus earum repudiandae inventore.</p>
         </div>
-
+        <div class="slide slide-3">
+          <span class="review__step">Step 3 of 5</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, harum beatae, sint vitae pariatur quod soluta eaque nesciunt eius modi eos quas sunt, sapiente neque esse praesentium adipisci. Ipsa aspernatur nihil autem eligendi maxime molestias consequatur fugit dolor, nulla inventore libero laudantium! Praesentium sapiente fuga in doloribus earum repudiandae inventore.</p>
+        
+        </div>
+        <div class="slide slide-4">
+          <span class="review__step">Step 4 of 5</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, harum beatae, sint vitae pariatur quod soluta eaque nesciunt eius modi eos quas sunt, sapiente neque esse praesentium adipisci. Ipsa aspernatur nihil autem eligendi maxime molestias consequatur fugit dolor, nulla inventore libero laudantium! Praesentium sapiente fuga in doloribus earum repudiandae inventore.</p>
+        </div>
+        <div class="slide slide-5">
+          <span class="review__step">Step 5 of 5</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, harum beatae, sint vitae pariatur quod soluta eaque nesciunt eius modi eos quas sunt, sapiente neque esse praesentium adipisci. Ipsa aspernatur nihil autem eligendi maxime molestias consequatur fugit dolor, nulla inventore libero laudantium! Praesentium sapiente fuga in doloribus earum repudiandae inventore.</p>
+        </div>
       </div>
-
-      <div class="reviewForm__inputWrapper reviewForm__inputWrapper-full">
-        <label for="reviewTitle">Title of Review</label>
-        <input type="text" name="review" id="reviewTitle">
-      </div>
-
-      <div class="reviewForm__inputWrapper reviewForm__inputWrapper-full">
-        <label for="reviewEmail">How was your overall experience?</label>
-        <textarea type="email" name="review" id="reviewEmail" rows='5'></textarea>
-      </div>
-
-      <button class="reviewForm__button">Continue</button>
+      <div class="navButtons">
+        <button class="prev" id="prevButton" disabled>Previous</button>
+        <button class="next" id="nextButton">Next</button>
+    </div>
     </div>
   </form>
 
