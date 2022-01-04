@@ -57,25 +57,43 @@
           <div class="reviewForm__row">
 
             <div class="reviewForm__inputWrapper">
-              <label for="reviewName">Name</label>
-              <input type="text" name="review" id="reviewName">
+              <label for="reviewName">First Name</label>
+              <input type="text" name="review" id="reviewName" required>
             </div>
 
             <div class="reviewForm__inputWrapper">
-              <label for="reviewEmail">Email</label>
-              <input type="email" name="review" id="reviewEmail">
+              <label for="reviewName">Last Name</label>
+              <input type="text" name="review" id="reviewName" required>
             </div>
 
+          </div>
+
+          <div class="reviewForm__inputWrapper reviewForm__inputWrapper-full">
+            <label for="reviewEmail">Email</label>
+            <input type="email" name="review" id="reviewEmail" required>
+          </div>
+
+          <div class="reviewForm__inputWrapper reviewForm__inputWrapper-full">
+            <label for="stage">Stage of Process*</label for="stage">
+            <select id="stage" name="stage" required>
+                <option selected="true" disabled="true" value="">Choose...</option>
+                <option value="Step 1 - Let's talk">Step 1: Let's talk</option>
+                <option value="Step 2 - Storyboard Process">Step 2: Storyboard Process</option>
+                <option value="Step 3 - Rendering to Scale">Step 3: Rendering to Scale</option>
+                <option value="Step 4 - The Big Event">Step 4: The Big Event</option>
+                <option value="Step 5 - Happily Ever After">Step 5: Happily Ever After</option>
+                <option value="Other">Other</option>
+            </select>
           </div>
 
           <div class="reviewForm__inputWrapper reviewForm__inputWrapper-full">
             <label for="reviewTitle">Title of Review</label>
-            <input type="text" name="review" id="reviewTitle">
+            <input type="text" name="review" id="reviewTitle" required>
           </div>
 
           <div class="reviewForm__inputWrapper reviewForm__inputWrapper-full">
             <label for="reviewEmail">How was your overall experience?</label>
-            <textarea type="email" name="review" id="reviewEmail" rows='5'></textarea>
+            <textarea type="email" name="review" id="reviewEmail" rows='5' required></textarea>
           </div>
         </div>
         <div class="slide slide-2">
@@ -97,8 +115,8 @@
         </div>
       </div>
       <div class="navButtons">
-        <button class="prev" id="prevButton" disabled>Previous</button>
-        <button class="next" id="nextButton">Next</button>
+        <button class="prev hidden" id="prevButton" disabled>Previous</button>
+        <button class="next" id="nextButton" disabled>Next</button>
     </div>
     </div>
   </form>
